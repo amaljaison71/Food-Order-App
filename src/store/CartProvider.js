@@ -1,4 +1,4 @@
-import CardContext from "./cart-context";
+import CartContext from "./cart-context";
 
 const CartProvider = (props) => {
   const addItemToCartHandler = (item) => {};
@@ -13,9 +13,9 @@ const CartProvider = (props) => {
   };
 
   return (
-    <CardContext.Provider value={cartContext}>
+    <CartContext.Provider value={cartContext}>
       {props.children}
-    </CardContext.Provider>
+    </CartContext.Provider>
   );
 };
 
